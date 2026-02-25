@@ -1,0 +1,11 @@
+CREATE DATABASE matricula;
+USE matricula;
+
+CREATE TABLE estudiantes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    telefono VARCHAR(20),
+    curso VARCHAR(50) NOT NULL,
+    fecha_matricula TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
