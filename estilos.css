@@ -1,72 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 50px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 700px;
+    margin: 60px auto;
     padding: 20px;
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #1f2937;
 }
 
 .form-container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    border-top: 6px solid #1e3a8a;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 label {
     display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
+    margin: 15px 0 6px;
+    font-weight: 600;
+    color: #374151;
 }
 
 input,
 select {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
     box-sizing: border-box;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #f9fafb;
+}
+
+input:focus,
+select:focus {
+    border-color: #1e3a8a;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+    background-color: #ffffff;
 }
 
 button {
-    background: #28a745;
+    margin-top: 25px;
+    background: #1e3a8a;
     color: white;
-    padding: 12px;
+    padding: 14px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     width: 100%;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
 }
 
 button:hover {
-    background: #218838;
+    background: #162d6b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .mensaje {
     margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 6px;
     text-align: center;
+    font-weight: 500;
 }
 
 .exito {
-    background: #d4edda;
-    color: #155724;
+    background: #e6f4ea;
+    color: #1b5e20;
+    border: 1px solid #c8e6c9;
 }
 
 .error {
-    background: #f8d7da;
-    color: #721c24;
+    background: #fdecea;
+    color: #7f1d1d;
+    border: 1px solid #f5c6cb;
 }
 
 @media (max-width: 768px) {
     body {
         margin: 20px;
+    }
+
+    .form-container {
+        padding: 25px;
     }
 }
